@@ -391,9 +391,21 @@ h2
         display: flex
         justify-content: center
         align-items: center
-        // padding: 28px 60px 29px 60px
         width: 25%
         height: 150px
+
+.partners_title
+    position: relative
+.hand-swipe
+    display: none
+    position: absolute
+    right: 15px
+    transform: scaleX(-1) translate(0, 150px)
+    animation: swiper 2s infinite
+    img
+        width: 80%
+        
+
 
 //-------------------------------------
 
@@ -402,6 +414,14 @@ h2
         width: 0
     to 
         width: 100%
+
+@keyframes swiper
+    0%
+
+    100%
+        transform: scaleX(-1) translate(0, 150px)
+        right: 55px
+        opacity: 0
 
 .circle
     display: block
@@ -538,50 +558,43 @@ h2
     justify-content: space-around
     margin-bottom: 200px
 
-.teachers_item
-    text-align: center
 
 .teachers_item
+    text-align: center
+    align-items: center
+
     div
         h4
             font-size: $fz-24
             font-weight: 500
             line-height: 140%
             margin-top: 40px
-
-.teachers_item
-    div
         p
             margin: 15px 0 30px 0
             line-height: 160%
             opacity: .5
-
-.teachers_item
-    div
         a
             padding: 10px 30px
             border-radius: 50px
             border: 1px solid $main-text-color
             transition: background .4s ease
-
-.teachers_item
-    div
-        a
             &:hover
                 background: rgb(255, 255, 255, .5)
                 transition: background .4s ease
 
 
-//-----------------------
 
+
+
+//-----------------------
 
 .subscription
     display: flex
     flex-direction: column
     align-items: center
     margin-bottom: 100px
-
-.subscription
+    h2
+        text-align: center
     >p
         max-width: 411px
         text-align: center
@@ -604,31 +617,28 @@ h2
         border-radius: 50%
         background: $line-gradient
 
-.subscription_form
-    display: flex
 
 .subscription_form
+    display: flex
+    width: 492px
     input
         padding: 0 30px
-        width: 353px
+        width: 100%
         height: 44px
         border-radius: 50px 0px 0px 50px
         background-color: rgba(255, 255, 255, .25)
         border: none
         color: $main-text-color
-
+    button
+        padding: 10px 30px
+        width: 160px
+        height: 44px
+        border-radius: 50px
+        background: linear-gradient(95deg, #DF5950 11.19%, #451046 93.72%)
+        margin-left: -40px
 input
     &::placeholder
         color: $main-text-color
-
-.subscription_form button
-    padding: 10px 30px
-    width: 160px
-    height: 44px
-    border-radius: 50px
-    background: linear-gradient(95deg, #DF5950 11.19%, #451046 93.72%)
-    margin-left: -40px
-
 
 .footer
     p
