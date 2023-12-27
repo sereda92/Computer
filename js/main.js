@@ -61,12 +61,15 @@ document.addEventListener("DOMContentLoaded", function() {
   //-------burger----
 
   const burgerBody = document.getElementById('burger')
-  const burgerBtn = document.getElementById('buger-btn')
+  const burgerBtn = document.getElementById('burger-btn')
+  const body = document.body
 
   burgerBtn.addEventListener('click', function(){
     if(burgerBody.classList.contains('burger-active')){
       burgerBody.classList.remove('burger-active')
+      body.classList.remove('scroll-hidden')
     }else{
       burgerBody.classList.add('burger-active')
+      body.classList.add('scroll-hidden')
     }
   })
