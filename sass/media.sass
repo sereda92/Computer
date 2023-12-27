@@ -1,7 +1,6 @@
 
 @media (max-width: 1240px)
     .counter__page 
-        // flex-direction: column-reverse
         gap: 50px
 
 @media (max-width: 1200px) 
@@ -16,6 +15,9 @@
         width: 500px
         >img
             width: 90%
+    .training_program
+        h2
+            text-align: center
 
 @media (max-width: 1024px)
     // .about__us
@@ -30,7 +32,6 @@
             width: 100%
             top: 65px
             left: 15px
-
 
 @media (max-width: 992px) 
     .header__menu
@@ -66,8 +67,14 @@
     .work__info__item
         h4
             max-width: 100%
-
-
+    .partners_title
+        margin-top: 80px
+    .brand
+        justify-content: space-between
+        div
+            flex: 1 1 50%
+            img
+                transform: scale(1.2)
 
 @media (max-width: 767px) 
     .first__block__title
@@ -113,9 +120,39 @@
         display: inline-block
         width: 65px
         word-wrap: break-word
+    .training_program 
+        margin-top: 0
+        margin-bottom: 50px
+    .teachers_main
+        flex-direction: column
+        margin-bottom: 100px
+        gap: 50px
+    .teachers_item
+        display: flex
+        justify-content: space-around
 
 
+@media (max-width: 640px)
+    .brand
+        flex-wrap: nowrap
+        overflow-x: scroll
+        div
+            flex: 1 0 45%
+            img
+                transform: scale(1)
+                
+    ::-webkit-scrollbar
+        background-color: #808080
+        height: 2px
 
+    ::-webkit-scrollbar-thumb 
+        background-color: #fc6969
+
+    scrollbar 
+        background-color: #808080
+
+    scrollbar-thumb 
+        background-color: #fc6969
 
 @media (max-width: 520px)
     .counter__page
@@ -130,6 +167,15 @@
             display: none
     .quick_start_result
         gap: 40px
+    .brand
+        div
+            img
+                transform: scale(.8)
+    .schedule_item 
+        h5
+            font-size: 14px
+    .schedule
+        margin-top: 50px
 
 @media (max-width: 480px)
     .first__block__title
@@ -142,8 +188,18 @@
         >img
             top: 45px
             left: 10px
-
-
+    .brand
+        div
+            img
+                transform: scale(.65)
+    .teachers_item
+        display: flex
+        flex-direction: column
 @media (max-width: 370px)
     #CDT
         gap: 0
+    .brand
+        div
+            img
+                transform: scale(.5)
+
