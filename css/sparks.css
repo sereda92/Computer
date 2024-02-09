@@ -6,6 +6,7 @@
     left: 40%;
     right: 0;
     bottom: 0;
+    z-index: -1;
 }
 .ag-fireflies_item {
     position: absolute;
